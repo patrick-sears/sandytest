@@ -1,0 +1,15 @@
+
+
+hellox is just a simple testing program.
+
+The simplest test:
+  ./g10.py
+
+Next try:
+  ./g10.py some arguments here
+
+Next:
+  ./g10.py --config g00.config
+
+
+
