@@ -12,7 +12,7 @@ print()
 
 fc_name = None
 config_id = None
-using_lib = False
+using_lib = 0
 
 ############################################
 if len(sys.argv) > 1:
@@ -22,12 +22,17 @@ if len(sys.argv) > 1:
   #
   if sys.argv[1] == '--config':
     fc_name = sys.argv[2]
-  elif sys.argv[1] == '--lib':
-    using_lib = True
+  elif sys.argv[1] == '--local_lib':
+    using_lib = 1
+  elif sys.argv[1] == '--installed_lib':
+    using_lib = 2
 ############################################
 
 
-if using_lib:
+if using_lib == 1:
+  from libs.sandylib import sandylib_print as sl_print
+  sl_print("Testing lib.")
+elif using_lib == 2:
   from prs.sandylib import sandylib_print as sl_print
   sl_print("Testing lib.")
 

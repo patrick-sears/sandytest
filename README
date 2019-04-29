@@ -13,13 +13,18 @@ Next:
   ./main.py --config g00.config
 
 
+Next, try:
+  ./main.py --local_lib
+
+
 Next, try installing and then running.
 Do
   ./install.py
 Then in a totally different directory, try
 the following two
   sandytest
-  sandytest --lib
+  sandytest --installed_lib
+
 
 
 
