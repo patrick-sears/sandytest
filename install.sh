@@ -9,7 +9,7 @@ if [[ -e "$HOME/bin" ]]; then
   if [[ -L "$name" ]]; then
     unlike "$name"
   fi
-  ln -s "$progdir/go.py"
+  ln -s "$progdir/main.py"
 else
   echo "No home bin dir, so not creating any link."
 fi
