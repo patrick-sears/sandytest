@@ -3,13 +3,28 @@
 hellox is just a simple testing program.
 
 The simplest test:
-  ./g10.py
+In this directory, do
+  ./main.py
 
 Next try:
-  ./g10.py some arguments here
+  ./main.py some arguments here
 
 Next:
-  ./g10.py --config g00.config
+  ./main.py --config g00.config
+
+
+Next, try:
+  ./main.py --local_lib
+
+
+Next, try installing and then running.
+Do
+  ./install.py
+Then in a totally different directory, try
+the following two
+  sandytest
+  sandytest --installed_lib
+
 
 
 
