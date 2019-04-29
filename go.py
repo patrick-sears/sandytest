@@ -10,6 +10,7 @@ print()
 
 fc_name = None
 config_id = None
+using_lib = False
 
 ############################################
 if len(sys.argv) > 1:
@@ -19,9 +20,14 @@ if len(sys.argv) > 1:
   #
   if sys.argv[1] == '--config':
     fc_name = sys.argv[2]
+  elif sys.argv[1] == '--lib':
+    using_lib = True
+    from prs_sandy_lib import prs_sandy_lib_print as sl_print
 ############################################
 
 
+if using_lib:
+  sl_print("Testing lib.")
 
 
 ############################################
