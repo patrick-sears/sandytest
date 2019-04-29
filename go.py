@@ -22,7 +22,7 @@ if len(sys.argv) > 1:
     fc_name = sys.argv[2]
   elif sys.argv[1] == '--lib':
     using_lib = True
-    from prs_sandy_lib import prs_sandy_lib_print as sl_print
+    from prs/sandy_lib import sandy_lib_print as sl_print
 ############################################
 
 
