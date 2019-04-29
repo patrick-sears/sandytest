@@ -7,9 +7,9 @@ name="sandytest"
 if [[ -e "$HOME/bin" ]]; then
   cd "$HOME/bin"
   if [[ -L "$name" ]]; then
-    unlike "$name"
+    unlink "$name"
   fi
-  ln -s "$progdir/main.py"
+  ln -s "$progdir/main.py" "$name"
 else
   echo "No home bin dir, so not creating any link."
 fi
